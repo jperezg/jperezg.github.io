@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jperezg/jperezg.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.12.1"
   },
   "dependencies": {
     "eleventy-plugin-sass": "^1.2.0"
