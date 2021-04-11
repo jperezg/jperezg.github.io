@@ -1,0 +1,27 @@
+{
+  "name": "jperezg.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jperezg/jperezg.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jperezg/jperezg.github.io/issues"
+  },
+  "homepage": "https://github.com/jperezg/jperezg.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  },
+  "dependencies": {
+    "eleventy-plugin-sass": "^1.2.0"
+  }
+}
