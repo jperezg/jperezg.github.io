@@ -64,25 +64,36 @@ h3 {
   background: color($default-theme, $primary-color);
   color: color($default-theme, $bg-color);
 
+  &:hover {
+    color: color($dark-theme, $text-color);
+  }
+
   @include theme($dark-theme) {
     color: color($dark-theme, $text-color);
     background: color($dark-theme, $primary-color);
+
+    &:hover {
+      color: color($default-theme, $bg-color);
+    }
   }
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .header {
   display: flex;
+  flex-direction: column;
   padding: 50px 0;
 
   .logo {
     flex: 1;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
   }
 
   .menu {
@@ -91,7 +102,7 @@ h3 {
     padding: 0;
 
     li {
-      display: inline-block;
+      display: block;
 
       a {
         display: block;
@@ -133,22 +144,11 @@ footer {
   align-items: flex-end;
 
   .image {
-    position: relative;
-    border-radius: 20px;
-
-    img {
-      width: 240px;
-      border-radius: 20px;
-      filter: grayscale(100%)
-              brightness(110%)
-              contrast(105%)
-              drop-shadow(8px 8px 0px rgba(color($dark-theme, $secondary-color), 0.16));
-    }
+    display: none;
   }
 
   .info {
-    flex: 1;
-    padding: 0 64px;
+    padding: 0 20px;
     color: color($default-theme, $text-color);
     // TODO
     font-size: 28px;
@@ -163,7 +163,7 @@ footer {
     .links {
       margin-top: 70px;
       // TODO
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 500;
       // letter-spacing: 2.4px;
       // END TODO
@@ -216,7 +216,44 @@ footer {
 }
 
 @media only screen and (min-width: 640px) {
+  .header {
+    flex-direction: row;
+
+    .logo {
+      text-align: left;
+    }
+
+    .menu {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  .hero-section {
+    .image {
+      display: block;
+      border-radius: 20px;
+
+      img {
+        width: 240px;
+        border-radius: 20px;
+        filter: grayscale(100%)
+                brightness(110%)
+                contrast(105%)
+                drop-shadow(8px 8px 0px rgba(color($dark-theme, $secondary-color), 0.16));
+      }
+    }
+
+    .info {
+      flex: 1;
+      padding: 0 64px;
+    }
+  }
+
   .services-section {
+    padding: 0;
+
     .services {
       grid-template-columns: 47.5% 47.5%;
       grid-column-gap: 5%;

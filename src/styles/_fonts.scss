@@ -1,14 +1,17 @@
 @font-face {
   font-family: 'Noway-Bold';
+  font-display: swap;
   src: url('/styles/fonts/noway/Noway-Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Noway-Medium';
+  font-display: swap;
   src: url('/styles/fonts/noway/Noway-Medium.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Noway';
+  font-display: swap;
   src: url('/styles/fonts/noway/Noway-Regular.otf') format('opentype');
 }
