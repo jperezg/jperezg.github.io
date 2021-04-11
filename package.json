@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,9 @@
   },
   "homepage": "https://github.com/jperezg/jperezg.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12n.1"
+    "@11ty/eleventy": "^0.12.1",
+    "eleventy-plugin-sass": "^1.2.0",
+    "gh-pages": "^3.1.0"
   },
-  "dependencies": {
-    "eleventy-plugin-sass": "^1.2.0"
-  }
+  "dependencies": {}
 }
