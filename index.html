@@ -5,18 +5,6 @@
   <title>José Pérez - Software Engineer</title>
   <link rel="stylesheet" href="style.css">
   <meta name="robots" content="noindex,nofollow">
-  <script>
-    window.matchMedia("(prefers-color-scheme: dark)").addListener(onColorScheme)
-
-    function setDarkMode() {
-      document.querySelector('body').className = 'dark-theme'
-    }
-
-    function onColorScheme(e) {
-      if (e.matches) setDarkMode()
-    }
-  </script>
-  <script src="https://kit.fontawesome.com/162daab59f.js" crossorigin="anonymous"></script>
 </head>
 <body class="default-theme">
   <div class="container">
@@ -104,5 +92,17 @@
        Design by <a href="http://simonmadsen.com/" rel="nofollow" target="_blank">Simon Madsen</a>
     </footer>
   </div>
+  <script>
+    window.matchMedia("(prefers-color-scheme: dark)").addListener(onColorScheme)
+
+    function setDarkMode() {
+      document.querySelector('body').className = 'dark-theme'
+    }
+
+    function onColorScheme(e) {
+      if (e.matches) setDarkMode()
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/162daab59f.js" crossorigin="anonymous"></script>
 </body>
 </html>
