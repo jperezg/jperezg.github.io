@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>José Pérez - Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="noindex,nofollow">
+  <script>
+    window.matchMedia("(prefers-color-scheme: dark)").addListener(onColorScheme)
+
+    function setDarkMode() {
+      document.querySelector('body').className = 'dark-theme'
+    }
+
+    function onColorScheme(e) {
+      if (e.matches) setDarkMode()
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/162daab59f.js" crossorigin="anonymous"></script>
+</head>
+<body class="default-theme">
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">
+        José Pérez
+      </h1>
+      <ul class="menu">
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a class="btn" href="#contact">Write José</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="hero-section">
+      <div class="image">
+        <img src="./img.jpg" />
+      </div>
+      <div class="info">
+        <p>Hi, I’m José 👋🏾.</p>
+        <p>
+          I have 10+ years of experience building <br/>
+          creative solutions using software.
+        </p>
+        <div class="links">
+          <a href="https://github.com/jperezg" target="_blank">
+            <i class="fab fa-github"></i> jperezg
+          </a>
+          <a href="https://www.linkedin.com/in/joseperezg/" target="_blank">
+            <i class="fab fa-linkedin"></i> joseperezg
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <h2>Services</h2>
+
+      <div class="services">
+        <div class="service">
+          <h3>Web Development</h3>
+          <p>
+            Reliable and scalable web platforms built from the bottom
+            considering best practices.
+          </p>
+          <p class="items">Node.js, React.js, Angular</p>
+        </div>
+
+        <div class="service">
+          <h3>Mobile Development</h3>
+          <p>
+            Hybrid and Native Mobile Applications that satisfy the requirements.
+          </p>
+          <p class="items">Cordova, React Native</p>
+        </div>
+
+        <div class="service">
+          <h3>Software Architecture</h3>
+          <p>
+            Software Architecture Design that satisfies functional and non-functional requirements.
+          </p>
+          <p class="items">Ergonomic APIs, User-centered Design, scalable systems</p>
+        </div>
+
+        <div class="service">
+          <h3>Internet of Things</h3>
+          <p>
+            Design and implementation of IoT platforms.
+          </p>
+          <p class="items">
+            Event-driven platforms, horizontally scalable systems
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Copyright &copy; 2021 José Pérez •
+       Design by <a href="http://simonmadsen.com/" rel="nofollow" target="_blank">Simon Madsen</a>
+    </footer>
+  </div>
+</body>
+</html>
