@@ -11,6 +11,7 @@ body {
   font-family: 'Noway';
   color: color($default-theme, $text-color);
   background: color($default-theme, $bg-color);
+  line-height: 21.6px;
 
   &.dark-theme {
     color: color($dark-theme, $text-color);
