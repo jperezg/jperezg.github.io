@@ -18,7 +18,7 @@ module.exports = (config) => {
     templateFormats: [
       'html',
       '11ty.js',
-      'jpg',
+      'png',
       'otf'
     ]
   }
